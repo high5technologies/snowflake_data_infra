@@ -9,7 +9,7 @@ name: 'API Deployment'
 on:
   push:
     paths:
-    - 'snowflake/**'                     #config-here
+    - 'snowflake-environment/**'                     #config-here
     branches:
     - main
     - dev
@@ -19,7 +19,7 @@ on:
   workflow_dispatch:
   
 env:
-  dir: snowflake                       #config-here
+  dir: snowflake-environment                       #config-here
 
 ##################################################################################################
 # No changes below here
