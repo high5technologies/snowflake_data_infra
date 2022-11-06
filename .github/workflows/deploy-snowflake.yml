@@ -87,5 +87,6 @@ jobs:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }} # environment level secret per branch
         snowflake_account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
         snowflake_region: ${{ secrets.SNOWFLAKE_REGION }}
+        snowflake_username: ${{ secrets.SNOWFLAKE_USERNAME }}
         snowflake_terraform_private_key: ${{ secrets.SNOWFLAKE_TERRAFORM_PRVIATE_KEY }}
         
