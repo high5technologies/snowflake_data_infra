@@ -84,7 +84,6 @@ jobs:
     #  #if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: terraform apply -auto-approve -var-file="env-config/${{ needs.set_env.outputs.env_name }}.tfvars"
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }} # environment level secret per branch
         snowflake_account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
         snowflake_region: ${{ secrets.SNOWFLAKE_REGION }}
         snowflake_username: ${{ secrets.SNOWFLAKE_USERNAME }}
