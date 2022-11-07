@@ -16,7 +16,8 @@ provider "snowflake" {
     account     = var.SNOWFLAKE_ACCOUNT
     region      = var.SNOWFLAKE_REGION
     username    = var.SNOWFLAKE_USER
-    private_key = var.SNOWFLAKE_PRIVATE_KEY
+    #private_key = var.SNOWFLAKE_PRIVATE_KEY
+    password    = var.SNOWFLAKE_PASSWORD
 }
 
 provider "snowflake" {
@@ -25,5 +26,6 @@ provider "snowflake" {
     account     = var.SNOWFLAKE_ACCOUNT
     region      = var.SNOWFLAKE_REGION
     username    = var.SNOWFLAKE_USER
-    private_key = var.SNOWFLAKE_PRIVATE_KEY
+    #private_key = var.SNOWFLAKE_PRIVATE_KEY
+    password    = var.SNOWFLAKE_PASSWORD
 }
