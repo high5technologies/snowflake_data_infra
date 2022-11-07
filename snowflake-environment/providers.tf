@@ -13,8 +13,8 @@ terraform {
 provider "snowflake" {
     alias       = "terraform_sysadmin"
     role        = "TERRAFORM_SYSADMIN"
-    account     = var.SNOWFLAKE_ACCOUNT
-    region      = var.SNOWFLAKE_REGION
+    #account     = var.SNOWFLAKE_ACCOUNT
+    #region      = var.SNOWFLAKE_REGION
     username    = var.SNOWFLAKE_USER
     #private_key = var.SNOWFLAKE_PRIVATE_KEY
     password    = var.SNOWFLAKE_PASSWORD
@@ -23,8 +23,8 @@ provider "snowflake" {
 provider "snowflake" {
     alias       = "terraform_security"
     role        = "TERRAFORM_SECURITY"
-    account     = var.SNOWFLAKE_ACCOUNT
-    region      = var.SNOWFLAKE_REGION
+    #account     = var.SNOWFLAKE_ACCOUNT
+    #region      = var.SNOWFLAKE_REGION
     username    = var.SNOWFLAKE_USER
     #private_key = var.SNOWFLAKE_PRIVATE_KEY
     password    = var.SNOWFLAKE_PASSWORD
