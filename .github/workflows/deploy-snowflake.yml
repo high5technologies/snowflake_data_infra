@@ -82,7 +82,8 @@ jobs:
     # Auto Apply
     - name: Terraform Apply
     #  #if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run: terraform apply -auto-approve -var-file="env-config/${{ needs.set_env.outputs.env_name }}.tfvars" -var='snowflake_account=${{ secrets.SNOWFLAKE_ACCOUNT }}' -var='snowflake_region=${{ secrets.SNOWFLAKE_REGION }}' -var='snowflake_username=${{ secrets.SNOWFLAKE_USERNAME }}' -var='snowflake_terraform_private_key=${{ secrets.SNOWFLAKE_TERRAFORM_PRVIATE_KEY }}'
+      #run: terraform apply -auto-approve -var-file="env-config/${{ needs.set_env.outputs.env_name }}.tfvars" -var='snowflake_account=${{ secrets.SNOWFLAKE_ACCOUNT }}' -var='snowflake_region=${{ secrets.SNOWFLAKE_REGION }}' -var='snowflake_username=${{ secrets.SNOWFLAKE_USERNAME }}' -var='snowflake_terraform_private_key=${{ secrets.SNOWFLAKE_TERRAFORM_PRVIATE_KEY }}'
+      run: terraform apply -auto-approve -var-file="env-config/${{ needs.set_env.outputs.env_name }}.tfvars" -var='snowflake_username=${{ secrets.SNOWFLAKE_USERNAME }}' -var='snowflake_terraform_private_key=${{ secrets.SNOWFLAKE_TERRAFORM_PRVIATE_KEY }}'
       #env:
       #  snowflake_account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
       #  snowflake_region: ${{ secrets.SNOWFLAKE_REGION }}
