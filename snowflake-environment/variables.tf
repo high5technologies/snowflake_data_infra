@@ -2,8 +2,8 @@
 variable "SNOWFLAKE_ACCOUNT" {type = string}
 variable "SNOWFLAKE_REGION" {type = string}
 variable "SNOWFLAKE_USER" {type = string}
-#variable "SNOWFLAKE_PRIVATE_KEY" {type = string}
-variable "SNOWFLAKE_PASSWORD" {type = string}
+variable "SNOWFLAKE_PRIVATE_KEY" {type = string}
+#variable "SNOWFLAKE_PASSWORD" {type = string}
 
 # Mapped from tfvars files (non-sensitive)
 variable "env" {
